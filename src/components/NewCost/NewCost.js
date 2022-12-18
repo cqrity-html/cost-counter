@@ -1,5 +1,6 @@
 import './NewCost.css';
 import CostForm from './CostForm';
+import Card from '../UI/Card.js';
 
 const NewCost = (props) => {
     const saveCostDataHandler = (inputCostData) => {
@@ -10,9 +11,9 @@ const NewCost = (props) => {
         props.onAddCost(costData);
     };
     return (
-        <div className='new-cost'>
+        <Card className='new-cost'>
             <CostForm onSaveCostData={saveCostDataHandler} />
-        </div>
+        </Card>
     );
 };
 
